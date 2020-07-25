@@ -21,3 +21,6 @@ Route::any("/ShowUser","API\ApiController@ShowUser")->middleware("Login");
 Route::any("/phpinfo","API\ApiController@phpinfo");
 Route::any("/Lists","API\ApiController@Lists");//列表
 Route::any("/qiandao","API\ApiController@qiandao")->middleware("Login");//签到
+Route::get("/api","API\JiaoHuController@api");
+
+
